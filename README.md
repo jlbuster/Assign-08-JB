@@ -2,7 +2,15 @@
 
 ## Description
 
-This is a nice description of a pizza project
+This is a project about pizza. Yum
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#questions)
+* [Questions](#questions)
 
 ## Installation
 
