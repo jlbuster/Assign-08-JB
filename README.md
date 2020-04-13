@@ -1,8 +1,8 @@
-# Pizza
+# Pizza Project
 
 ## Description
 
-This is a project about pizza. Yum
+This is a project about my favorite types of pizza.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,24 +14,30 @@ This is a project about pizza. Yum
 
 ## Installation
 
-undefined
+```
+npm install
+```
 
 ## Usage
 
-undefined
+Run 'node index.js' in your terminal. That's it!
 
 ## License
 
-MIT
+This project uses the MIT license.
 
 ## Contributing
 
-undefined
+Clone the repo. Write your code. Create a pull request. I'll check it out soon! Thank you!
 
 ## Tests
 
-undefined
+No tests
 
 ## Questions
 
-undefined
+Google it.
+
+If you have any other questions please email me at null.
+
+![My image](https://avatars3.githubusercontent.com/u/57155115?v=4)

@@ -19,18 +19,43 @@ inquirer
       name: 'description'
     },
     {
+      type: 'input',
+      message: 'What commands should you run to install dependancies',
+      name: 'installation'
+    },
+    {
+      type: 'input',
+      message: 'How would you describe how to use this program?',
+      name: 'usage'
+    },
+    {
       type: 'list',
       name: 'license',
       message: 'What licenses would you like in your READ.me?',
       choices: ['MIT', 'Unilicense', 'Mozilla 2.0', 'Apache 2.0']
+    },
+    {
+      type: 'input',
+      message: 'What would you like to say to any possible contributors?',
+      name: 'contributing'
+    },
+    {
+      type: 'input',
+      message: 'What command(s) do you need to run, if any, in order to test the program?',
+      name: 'tests'
+    },
+    {
+      type: 'input',
+      message: 'What does the user need to do if they have any questions?',
+      name: 'questions'
     }
     ]).then(function (answers) {
 
     console.log(answers)
 
-      axios.get(`https://api.github.com/users/${answers.name}`)
+      axios.get(`https://api.github.com/users/${answers.username}`)
       .then(githubResponse => {
-       // console.log('My Data', githubResponse.data)
+        //console.log('My Data', githubResponse.data)
 
         const content = `# ${answers.title}
 
@@ -48,7 +73,9 @@ ${answers.description}
 
 ## Installation
 
+\`\`\`
 ${answers.installation}
+\`\`\`
 
 ## Usage
 
@@ -56,7 +83,7 @@ ${answers.usage}
 
 ## License
 
-${answers.license}
+This project uses the ${answers.license} license.
 
 ## Contributing
 
@@ -68,7 +95,11 @@ ${answers.tests}
 
 ## Questions
 
-${answers.questions}`
+${answers.questions}
+
+If you have any other questions please email me at ${githubResponse.data.email}.
+
+![My image](${githubResponse.data.avatar_url})`
 
     fs.writeFile('README.md', content, err => {
       if (err) {
