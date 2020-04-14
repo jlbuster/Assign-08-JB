@@ -59,6 +59,8 @@ inquirer
 
         const content = `# ${answers.title}
 
+![Version_badge](https://img.shields.io/badge/Version-1.0.0-blue)
+
 ## Description
 
 ${answers.description}
@@ -73,6 +75,8 @@ ${answers.description}
 
 ## Installation
 
+Make sure to run the following code in your terminal before using the application.
+
 \`\`\`
 ${answers.installation}
 \`\`\`
@@ -83,7 +87,7 @@ ${answers.usage}
 
 ## License
 
-This project uses the ${answers.license} license.
+This project uses the ${answers.license} license. To learn more about this license, simply search the license through google.
 
 ## Contributing
 
