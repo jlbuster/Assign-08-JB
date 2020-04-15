@@ -26,6 +26,16 @@ npm install
 
 Simply run the code 'node index.js' in your terminal then continue to answer the questions that will describe your read.me. The application will handle the rest!
 
+Input : 
+
+![UsageGif](/Gifs/Usage.gif)
+
+Output : 
+
+![output1](/Images/Working_app1.png)
+
+![output2](/Images/Working_app2.png)
+
 ## License
 
 This project uses the MIT license. To learn more about this license, simply search the license through google.
