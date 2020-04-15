@@ -41,9 +41,11 @@ Currently, there are no tests for this application. Any future tests can be view
 ## Questions
 
 Q : What if I want to add more sub-sections to my read.me?
+
 A : This read.me generator comes with a number of pre-set sub-sections. If you would like to add more, you can simply edit the read.me file after you have run this program.
 
 Q : I made a mistake in one of the previous questions. How can I fix it?
+
 A : Unfortunetely there is no way to 'go back' in this application. Instead you could restart the application and type the correct information where the mistake was made before (along with all the other info as well).
 
 If you have any other questions please email me at null.
